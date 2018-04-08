@@ -31,20 +31,10 @@ __Base URL:__ `https://padachihn.herokuapp.com`
 
         ```json
         {
-            "ipaddress":"203.192.212.100",
+            "ipaddress":"203.xxx.xxx.xxx",
             "language":"en-US",
             "software":"Windows NT 10.0; Win64; x64"
         }
-        ```
-
-* __Error Response__
-
-    * __Code:__ 404 NOT FOUND
-
-    * __Content:__
-
-        ```
-        Cannot GET /<invalid-path>
         ```
 
 * __Sample Call__
@@ -54,10 +44,6 @@ __Base URL:__ `https://padachihn.herokuapp.com`
       --url 'https://padachihn.herokuapp.com/footprint'
     ```
 
-* __Note__
-
-    You get Error Response when entered URL is wrong (e.g., /myprint).
-
 # Fun Fact
 
 `Padachihn` in `Hindi` means `Footprint`.
@@ -66,4 +52,4 @@ __Base URL:__ `https://padachihn.herokuapp.com`
 
 To [Irene Ros](https://github.com/iros) for the doc [template](https://gist.github.com/iros/3426278).
 
-#### Signing-off v1.0, Abhay Kumar
+#### Signing-off v1.1, Abhay Kumar
