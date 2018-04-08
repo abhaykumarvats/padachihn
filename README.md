@@ -1,1 +1,69 @@
-# padachihn
+# Table of Contents
+
+* [Introduction](#introduction)
+* [Documentaion](#documentation)
+* [Fun Fact](#fun-fact)
+* [Thanks](#thanks)
+
+# Introduction
+
+Padachihn is a RESTful web API that gives you information about your footprint on Internet. Your IP address, language and the operating system you are on.
+
+# Documentation
+
+__Base URL:__ `https://padachihn.herokuapp.com`
+
+## Get Information
+
+* __URL__
+
+    `/footprint`
+
+* __Method__
+
+    `GET`
+
+* __Success Response__
+
+    * __Code:__ 200 OK
+
+    * __Content:__
+
+        ```json
+        {
+            "ipaddress":"203.192.212.100",
+            "language":"en-US",
+            "software":"Windows NT 10.0; Win64; x64"
+        }
+        ```
+
+* __Error Response__
+
+    * __Code:__ 404 NOT FOUND
+
+    * __Content:__
+
+        ```
+        Cannot GET /<invalid-path>
+        ```
+
+* __Sample Call__
+
+    ```
+    curl --request GET \
+      --url 'https://padachihn.herokuapp.com/footprint'
+    ```
+
+* __Note__
+
+    You get Error Response when entered URL is wrong (e.g., /myprint).
+
+# Fun Fact
+
+`Padachihn` in `Hindi` means `Footprint`.
+
+# Thanks
+
+To [Irene Ros](https://github.com/iros) for the doc [template](https://gist.github.com/iros/3426278).
+
+#### Signing-off v1.0, Abhay Kumar
