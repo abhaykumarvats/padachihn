@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 });
 
 // Listen for GET requests to /myprint
-app.get('/myprint', (req, res) => {
+app.get('/footprint', (req, res) => {
     // Populate json
     var json = {};
     json.ipaddress = req.headers['x-forwarded-for'] || req.connection.remoteAddress || req.socket.remoteAddress || req.connection.socket.remoteAddress;
