@@ -13,9 +13,8 @@ app.get('/', (req, res) => {
 // Listen for GET requests to /myprint
 app.get('/myprint', (req, res) => {
     // Populate json
-    var json = {}, array = req.ip.split(':');
-    
-    json.ipaddress = array[array.length - 1];
+    var json = {};
+    json.ipaddress = req.headers['x-forwarded-for'] || req.connection.remoteAddress || req.socket.remoteAddress || req.connection.socket.remoteAddress;
     json.language = req.get('Accept-Language').split(',')[0];
     json.software = req.get('User-Agent').split(/[()]/)[1];
 
