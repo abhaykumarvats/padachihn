@@ -52,4 +52,4 @@ __Base URL:__ `https://padachihn.herokuapp.com`
 
 To [Irene Ros](https://github.com/iros) for the doc [template](https://gist.github.com/iros/3426278).
 
-#### Signing-off v1.1, Abhay Kumar
+#### Signing-off, Abhay Kumar
